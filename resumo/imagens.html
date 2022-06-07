@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagens Responsivas, Áudios e Vídeos</h1>
+    <h2>Imagem 1</h2>
+    <picture>
+        <source media="(max-width: 625px)" srcset="imagens/foto-400.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagens/foto-600.png" type="image/png">
+        <img src="imagens/foto-1000.png" alt="Imagem grande">
+    </picture>
+    <h2>Imagem 2</h2>
+    <picture>
+        <source media="(max-width: 625px)" srcset="imagens/maracana-400.jpeg" type="image/jpeg">
+        <source media="(max-width: 1025px)" srcset="imagens/maracana-600.jpeg" type="image/jpeg">
+        <img src="imagens/maracana-1000.jpeg" alt="#">
+    </picture>
+    <h2>Áudio</h2>
+    <audio src="midia/After Sunset (Original Mix).mp3" autoplay controls=""  loop></audio>
+    <!-- <audio preload="metadata">
+        <source src="midia/After Sunset (Original Mix).mp3" type="audio/mpeg">
+        <source src="midia/After Sunset (Original Mix).ogg" type="audio/ogg">
+        <source src="midia/After Sunset (Original Mix).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/After Sunset (Original Mix).mp3">Clique aqui para baixar o áudio</a>.</p>
+    </audio> -->
+    <h2>Vídeo</h2>
+    <video src="midia/video.mp4" poster="imagens/paisagem/paisagem-560.jpg" controls width="560" style="margin: 0px 0px 10px 0px;"></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xYcl1V35a20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="index.html" rel="prev"><strong>Voltar</strong></a></p>
+</body>
+</html>

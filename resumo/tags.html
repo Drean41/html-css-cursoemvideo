@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags e Formatações de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tags e Formatações de Texto</h1>
+    <h2>Semânticas e Não Semânticas</h2>
+    <h3>Semânticas</h3>
+    <ul>
+        <li><strong>strong</strong> para deixar em negrito</li>
+        <li><em>em</em> para deixar em itálico</li>
+        <li><mark>mark</mark> para marcar</li>
+        <li><small>small</small> para deixar a letra pequena</li>
+        <li><del>del</del> para linha no meio do texto</li>
+        <li><ins>ins</ins> para sublinhar</li>
+        <li><sup>sup</sup> para sobrescrito</li>
+        <li><sub>sub</sub> para subscrito</li>
+    </ul>
+    <h3>Não Semânticas</h3>
+    <ul>
+        <li>b para negrito</li>
+        <li>i para itálico</li>
+        <li>big para texto um pouco maior</li>
+        <li>u para sublinhar</li>
+    </ul>
+    <h2>Código-fonte / Pré-formatação (usando a tag code)</h2>
+    <p>O comando document.getElementById('teste') é escrito em linguagem de JavaScript. (sem a tag code)</p>
+    <code>O comando document.getElementById('teste') é escrito em linguagem de JavaScript. (com a tag code)</code>
+    <h3>Exemplo de Código em Python</h3>
+    <p>sem a tag pre</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR")
+        print('Fim do programa')
+    </code>
+    <p>com a tag pre</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR")
+    print('Fim do programa')  
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações completas (usando a tag blockquote)</h2>
+    <p>
+        Segundo Jeff Nobel, no seu livro HTML para leigos: <blockquote>A diferença entre elementos inline e u bloco de texto é pouca. Os elementos HTML nesse capítulo descrevem os blocos de textos.</blockquote>
+    </p>
+    <h2>Abreviações (usando a tag abbr)</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido (usando a tag bdo)</h2>
+    <p><bdo dir="rtl">Esta é a tag mais inútil de HTML.</bdo></p>
+    <h2>Listas</h2>
+    <h3>Ordenadas</h3>
+    <ol>
+        <li>Pão</li>
+        <li>Água</li>
+        <li>Ovo</li>
+    </ol>
+    <h3>Não Ordenadas</h3>
+    <ul>
+        <li>Pão</li>
+        <li>Água</li>
+        <li>Ovo</li>
+    </ul>
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>Xbox</li>
+        <ul>
+            <li>Gears of War</li>
+            <ul>
+                <li class="a">Gears of War 3</li>
+                <li class="a">Gears 5</li>
+            </ul>
+            <li>Forza</li>
+            <ul>
+                <li class="a">Forza Horizon 2</li>
+                <li class="a">Forza Motosport 7</li>
+            </ul>
+        </ul>
+        <li>Playstation</li>
+        <ul>
+            <li>The Last of Us</li>
+            <li>Uncharted</li>
+            <ul>
+                <li class="a">Uncharted 4</li>
+            </ul>
+        </ul>
+        <li>Mobile</li>
+        <ul>
+            <li>Asphalt</li>
+            <li>Subway Surfers</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design de um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para a criação de imteratividade de um site.</dd>
+    </dl>
+    <!-- ol: ordered list-->
+    <!-- Para quem está vendo o vídeo agora, eu dei uma olhada na documentação MDN que o VsCode sempre recomenda e o parâmetro "type" dentro do <ul> ou <ol> está ultrapassado. O correto é colocar esse parâmetro dentro das CSS. Fica mais ou menos assim: 
+    <style>
+        ol{
+            list-style-type: 1;
+        }    
+        ul{
+            list-style-type: circle;
+        }
+    </style> 
+    Tem o tipo 1,a,A,i,I / 
+    Tem o tipo disc, circle e square-->
+    <h2>Tabela (com a tag &lt;table&gt;, &lt;tr&gt; e &lt;th&gt;)</h2>
+    <table border="1" width="25%">
+        <tr>
+            <th class="title">Item</th>
+            <th class="title">Quantidade</th>
+        </tr>
+        <tr>
+            <th>Arroz</th>
+            <th>5Kg</th>
+        </tr>
+        <tr>
+            <th>Feijão</th>
+            <th>2Kg</th>
+        </tr>
+        <tr>
+            <th>Café</th>
+            <th>10Kg</th>
+        </tr>
+    </table>
+
+    <p><a href="index.html" rel="prev"><strong>Voltar</strong></a></p>
+</body>
+</html>
