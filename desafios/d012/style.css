@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,8 +18,8 @@ header {
     text-align: center;
 }
 header > h1 {
-    padding: 40px 0px 4px 0px;
-    font-family: 'Oswald', sans-serif;
+    padding: 40px 0px 0px 0px;
+    font-family: 'Fredoka One', sans-serif;
     font-weight: bolder;
     font-size: 2.7em;
 }
@@ -33,14 +35,48 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-main > section.semfundo {
-    height: 500px;
-}
+
 main > section > p {
-    padding: 100px 20px 0px;
+    font-family: 'Kalam', 'cursive';
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.726);
+    line-height: 2em;
 }
-main > section.comfundo {
+main > section#semfundo1, section#semfundo2, section#semfundo3 {
+    padding: 100px 0px ;
+    margin-left: 20px;
+}
+main > section#comfundo1 {
+    background: url(imagens/background001.jpg) right center/cover no-repeat fixed;
+    padding: 40px 0px;
+}
+main > section#comfundo1 > p {
+    color: rgba(255, 255, 255, 0.945);
+    width: 295px;
+    margin: 50px 0px;
+    padding: 10px 0px 0px 20px;
+    background-color: #0000004d;
+    backdrop-filter: blur(12px);
+}
+main > section#comfundo2 {
+    background: url(imagens/background002.jpg) right center/cover no-repeat fixed;
+    padding: 40px 0px;
+}
+main > section#comfundo2 > p {
+    color: rgba(255, 255, 255, 0.945);
+    width: 298px;
+    margin: 50px 0px;
+    padding: 10px 0px 0px 20px;
+    background-color: #0000004d;
+    backdrop-filter: blur(12px);
+}
+footer {
     background-color: black;
-    height: 500px;
-    
+    color: white;
+    text-align: center;
+}
+footer > p {
+    padding: 7px 0px;
+    font-size: 0.9em;
 }
