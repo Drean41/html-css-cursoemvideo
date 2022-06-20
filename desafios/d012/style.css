@@ -8,8 +8,10 @@
     box-sizing: border-box;
     margin: 0px;
 }
-body {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
 }
 header {
     background-color: black;
@@ -18,14 +20,14 @@ header {
     text-align: center;
 }
 header > h1 {
-    padding: 40px 0px 0px 0px;
+    padding-top: 40px;
     font-family: 'Fredoka One', sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 2.7em;
 }
 header > p {
     font-size: 0.9em;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
 }
 header a {
     color: white;
@@ -35,41 +37,32 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-
-main > section > p {
+section > p {
     font-family: 'Kalam', 'cursive';
     font-weight: bold;
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.726);
     line-height: 2em;
+    padding-bottom: 2em;
+    width: 300px;
 }
-main > section#semfundo1, section#semfundo2, section#semfundo3 {
-    padding: 100px 0px ;
-    margin-left: 20px;
+section.fundobranco{
+    padding: 10vh 0px 10vh 30px;
 }
-main > section#comfundo1 {
+section.fundoimagem {
+    padding: 10vh 0px 10vh 20px
+}
+section.fundoimagem#f1 {
     background: url(imagens/background001.jpg) right center/cover no-repeat fixed;
-    padding: 40px 0px;
 }
-main > section#comfundo1 > p {
-    color: rgba(255, 255, 255, 0.945);
-    width: 295px;
-    margin: 50px 0px;
-    padding: 10px 0px 0px 20px;
-    background-color: #0000004d;
-    backdrop-filter: blur(12px);
-}
-main > section#comfundo2 {
+section.fundoimagem#f2 {
     background: url(imagens/background002.jpg) right center/cover no-repeat fixed;
-    padding: 40px 0px;
 }
-main > section#comfundo2 > p {
-    color: rgba(255, 255, 255, 0.945);
-    width: 298px;
-    margin: 50px 0px;
-    padding: 10px 0px 0px 20px;
-    background-color: #0000004d;
+section.fundoimagem > p {
+    background-color: rgba(0, 0, 0, 0.349);
     backdrop-filter: blur(12px);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.925);
 }
 footer {
     background-color: black;
@@ -79,4 +72,12 @@ footer {
 footer > p {
     padding: 7px 0px;
     font-size: 0.9em;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
 }
