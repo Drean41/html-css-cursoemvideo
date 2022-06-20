@@ -45,12 +45,14 @@ section > p {
     line-height: 2em;
     padding-bottom: 2em;
     width: 300px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
 }
 section.fundobranco{
     padding: 10vh 0px 10vh 30px;
 }
 section.fundoimagem {
-    padding: 10vh 0px 10vh 20px
+    padding: 10vh 0px 10vh 20px;
+    box-shadow: inset 0px 0px 16px 4px rgba(0, 0, 0, 0.445);
 }
 section.fundoimagem#f1 {
     background: url(imagens/background001.jpg) right center/cover no-repeat fixed;
