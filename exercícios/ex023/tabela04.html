@@ -25,16 +25,20 @@
     <table>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th scope="">Nomes</th>
-                <th scope="" colspan="3">Filmes</th>
+                <!--   
+                    col/row para unica coluna
+                    colgroup/rowgroup para duas ou mais colunas/linhas
+                -->
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
-                <td> Alien</td>
+                <td>Alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
             </tr>
@@ -51,7 +55,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
